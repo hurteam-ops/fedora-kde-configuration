@@ -1,0 +1,12 @@
+-- Neovim Matugen Dynamic Colors — Fedora KDE Edition
+return {
+  red = "{{colors.analogous-cool.red}}",
+  peach = "{{colors.analogous-cool.orange}}",
+  yellow = "{{colors.analogous-cool.yellow}}",
+  green = "{{colors.analogous-cool.green}}",
+  blue = "{{colors.analogous-cool.blue}}",
+  mauve = "{{colors.analogous-cool.purple}}",
+  text = "{{colors.analogous-cool.text}}",
+  surface = "{{colors.analogous-cool.surface}}",
+  background = "{{colors.analogous-cool.background}}",
+}

@@ -1,0 +1,18 @@
+/* Qt Style Sheet — Fedora KDE Matugen */
+QWidget {
+    background-color: {{colors.analogous-cool.background}};
+    color: {{colors.analogous-cool.text}};
+}
+QPushButton {
+    background-color: {{colors.analogous-cool.blue}};
+    color: {{colors.analogous-cool.background}};
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+QLineEdit {
+    background-color: {{colors.analogous-cool.surface}};
+    color: {{colors.analogous-cool.text}};
+    border: 1px solid {{colors.analogous-cool.blue}};
+    border-radius: 4px;
+    padding: 4px;
+}

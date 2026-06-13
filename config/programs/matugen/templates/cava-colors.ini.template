@@ -1,0 +1,12 @@
+# Cava Matugen Colors — Fedora KDE Edition
+[color]
+gradient = 1
+gradient_count = 8
+gradient_color_1 = '{{colors.analogous-cool.red}}'
+gradient_color_2 = '{{colors.analogous-cool.orange}}'
+gradient_color_3 = '{{colors.analogous-cool.yellow}}'
+gradient_color_4 = '{{colors.analogous-cool.green}}'
+gradient_color_5 = '{{colors.analogous-cool.blue}}'
+gradient_color_6 = '{{colors.analogous-cool.indigo}}'
+gradient_color_7 = '{{colors.analogous-cool.purple}}'
+gradient_color_8 = '{{colors.analogous-cool.pink}}'

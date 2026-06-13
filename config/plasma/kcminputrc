@@ -1,0 +1,10 @@
+[Keyboard]
+RepeatDelay=250
+RepeatRate=55
+NumLock=0
+
+[Libinput][1209][1555][Touchpad]
+naturalScroll=true
+tapToClick=true
+tapToDrag=true
+disableWhileTyping=true

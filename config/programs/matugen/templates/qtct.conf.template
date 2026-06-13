@@ -1,0 +1,10 @@
+[ColorScheme]
+active=0,0,0
+window={{colors.analogous-cool.surface}}
+windowText={{colors.analogous-cool.text}}
+base={{colors.analogous-cool.background}}
+text={{colors.analogous-cool.text}}
+button={{colors.analogous-cool.surface}}
+buttonText={{colors.analogous-cool.text}}
+highlight={{colors.analogous-cool.blue}}
+highlightedText={{colors.analogous-cool.background}}

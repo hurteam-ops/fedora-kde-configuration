@@ -1,0 +1,8 @@
+pkgs/
+
+.env
+.env.*
+**/.env
+**/.env.*
+
+commit.txt

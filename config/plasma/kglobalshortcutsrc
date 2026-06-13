@@ -1,0 +1,18 @@
+[org.kde.krunner.desktop]
+_launch=Alt+Space,Custom
+
+[org.kde.kterminal.desktop]
+_launch=Ctrl+Alt+T,Custom
+
+[org.kde.plasma.systemmonitor.desktop]
+_launch=Ctrl+Escape,Custom
+
+[kwin]
+Switch One Desktop Down=Ctrl+Alt+Down,Custom
+Switch One Desktop Up=Ctrl+Alt+Up,Custom
+Switch One Desktop to the Left=Ctrl+Alt+Left,Custom
+Switch One Desktop to the Right=Ctrl+Alt+Right,Custom
+Window Quick Tile Bottom=Ctrl+Meta+Down,Custom
+Window Quick Tile Top=Ctrl+Meta+Up,Custom
+Window Quick Tile Left=Ctrl+Meta+Left,Custom
+Window Quick Tile Right=Ctrl+Meta+Right,Custom

@@ -1,0 +1,10 @@
+/* GTK Matugen Dynamic Colors — Fedora KDE Edition */
+@define-color red {{colors.analogous-cool.red}};
+@define-color peach {{colors.analogous-cool.orange}};
+@define-color yellow {{colors.analogous-cool.yellow}};
+@define-color green {{colors.analogous-cool.green}};
+@define-color blue {{colors.analogous-cool.blue}};
+@define-color mauve {{colors.analogous-cool.purple}};
+@define-color text {{colors.analogous-cool.text}};
+@define-color surface {{colors.analogous-cool.surface}};
+@define-color background {{colors.analogous-cool.background}};

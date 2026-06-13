@@ -1,0 +1,21 @@
+# Kitty Matugen Dynamic Colors — Fedora KDE Edition
+foreground {{colors.analogous-cool.text}}
+background {{colors.analogous-cool.background}}
+color0 {{colors.analogous-cool.surface}}
+color1 {{colors.analogous-cool.red}}
+color2 {{colors.analogous-cool.green}}
+color3 {{colors.analogous-cool.yellow}}
+color4 {{colors.analogous-cool.blue}}
+color5 {{colors.analogous-cool.purple}}
+color6 {{colors.analogous-cool.teal}}
+color7 {{colors.analogous-cool.text}}
+color8 {{colors.analogous-cool.surface}}
+color9 {{colors.analogous-cool.red}}
+color10 {{colors.analogous-cool.green}}
+color11 {{colors.analogous-cool.yellow}}
+color12 {{colors.analogous-cool.blue}}
+color13 {{colors.analogous-cool.purple}}
+color14 {{colors.analogous-cool.teal}}
+color15 {{colors.analogous-cool.text}}
+selection_foreground {{colors.analogous-cool.background}}
+selection_background {{colors.analogous-cool.blue}}

@@ -1,0 +1,13 @@
+{
+  "red": "{{colors.analogous-cool.red}}",
+  "peach": "{{colors.analogous-cool.orange}}",
+  "yellow": "{{colors.analogous-cool.yellow}}",
+  "green": "{{colors.analogous-cool.green}}",
+  "blue": "{{colors.analogous-cool.blue}}",
+  "sapphire": "{{colors.analogous-cool.indigo}}",
+  "mauve": "{{colors.analogous-cool.purple}}",
+  "pink": "{{colors.analogous-cool.pink}}",
+  "text": "{{colors.analogous-cool.text}}",
+  "surface": "{{colors.analogous-cool.surface}}",
+  "background": "{{colors.analogous-cool.background}}"
+}

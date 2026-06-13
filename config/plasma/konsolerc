@@ -1,0 +1,11 @@
+[General]
+Properties=0x0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0
+TerminalCenter=false
+TerminalColumns=120
+TerminalRows=30
+
+[MainWindow]
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
