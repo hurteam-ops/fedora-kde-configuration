@@ -4,7 +4,7 @@
 #  Forked from ilyamiro/nixos-configuration
 #
 #  Usage:
-#    curl -fsSL https://raw.githubusercontent.com/<USER>/fedora-kde-configuration/master/setup.sh | bash
+#    curl -fsSL https://raw.githubusercontent.com/hurteam-ops/fedora-kde-configuration/main/setup.sh | bash
 #    Or: chmod +x setup.sh && ./setup.sh
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -37,14 +37,17 @@ if [[ ! -f /etc/fedora-release ]]; then
 fi
 
 # Determine script directory (supports curl | bash and local execution)
-if [[ -d "${BASH_SOURCE[0]%/*}" && "${BASH_SOURCE[0]}" != "${BASH_SOURCE[0]%/*}" ]]; then
-    SCRIPT_DIR="$(cd "${BASH_SOURCE[0]%/*}" && pwd)"
-else
+SCRIPT_DIR=""
+if [[ -n "${BASH_SOURCE[0]:-}" && "${BASH_SOURCE[0]}" != "bash" ]]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd 2>/dev/null || true)"
+fi
+
+if [[ -z "$SCRIPT_DIR" || ! -d "$SCRIPT_DIR" ]]; then
     # Running via curl pipe — try to clone
     SCRIPT_DIR="$HOME/fedora-kde-configuration"
     if [[ ! -d "$SCRIPT_DIR" ]]; then
         echo -e "${CYAN}Cloning fedora-kde-configuration...${NC}"
-        git clone https://github.com/onyxserver/fedora-kde-configuration.git "$SCRIPT_DIR"
+        git clone https://github.com/hurteam-ops/fedora-kde-configuration.git "$SCRIPT_DIR"
     fi
 fi
 

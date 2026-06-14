@@ -39,14 +39,14 @@ This is a full desktop configuration suite for **Fedora Linux with KDE Plasma**,
 > DO NOT RUN AS ROOT! The script will use `sudo` where needed.
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/<YOUR_USER>/fedora-kde-configuration/master/setup.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/hurteam-ops/fedora-kde-configuration/main/setup.sh)"
 ```
 
 Or manually:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/<YOUR_USER>/fedora-kde-configuration.git ~/fedora-kde-configuration
+git clone https://github.com/hurteam-ops/fedora-kde-configuration.git ~/fedora-kde-configuration
 
 # 2. Run the setup
 cd ~/fedora-kde-configuration
