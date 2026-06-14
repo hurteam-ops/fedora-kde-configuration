@@ -16,7 +16,7 @@ fd-find
 jq
 tree
 wget
-killall
+psmisc           # provides killall
 p7zip
 p7zip-plugins
 unzip
@@ -35,17 +35,13 @@ libnotify
 wl-clipboard
 grim
 slurp
-satty
 swappy
 obs-studio
-gpu-screen-recorder
-power-profiles-daemon
 glaxnimate
 
 # Development
 python3
 python3-pip
-neovim
 gcc
 gcc-c++
 make
@@ -53,8 +49,7 @@ cmake
 jetbrains-mono-fonts
 jetbrains-mono-fonts-all
 
-# KDE Plasma specific
-kde-plasma-desktop
+# KDE Plasma specific (already installed on KDE spin — kept for completeness)
 plasma-workspace
 kwin
 konsole
@@ -65,32 +60,23 @@ kde-connect
 kate
 gwenview
 spectacle
-print-manager
 plasma-nm
 plasma-pa
 bluedevil
 firewall-config
 
 # KDE apps
-libreoffice-qt
+libreoffice
 telegram-desktop
-obsidian
-onlyoffice-desktopeditors
 qbittorrent
 mpv
-spectacle
 
 # Gaming
 steam-devices
 gamemode
-gamescope
 
 # Theming & appearance
-matugen
 adw-gtk3-theme
-adwaita-qt
-kvantum
-kvantum-themes
 qt5ct
 qt6ct
 qt6-qt5compat
@@ -117,7 +103,6 @@ pipewire-jack-audio-connection-kit
 alsa-utils
 easyeffects
 ladspa
-caps-ladspa
 
 # Bluetooth
 bluez
