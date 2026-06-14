@@ -84,25 +84,14 @@ if ! command -v matugen &>/dev/null; then
     sudo dnf copr enable -y inox/matugen 2>/dev/null && sudo dnf install -y matugen || echo -e "${YELLOW}matugen not available. Install manually later.${NC}"
 fi
 
-# ── 5. Flatpak apps (not in Fedora repos) ──
-echo -e "${GREEN}[5/10] Installing Flatpak apps...${NC}"
-if command -v flatpak &>/dev/null; then
-    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo 2>/dev/null || true
-    flatpak install -y flathub md.obsidian.Obsidian 2>/dev/null || echo -e "${YELLOW}Obsidian not installed (flathub may need setup)${NC}"
-    flatpak install -y flathub org.onlyoffice.desktopeditors 2>/dev/null || echo -e "${YELLOW}OnlyOffice not installed${NC}"
-    flatpak install -y flathub com.obsproject.Studio 2>/dev/null || echo -e "${YELLOW}OBS Studio flatpak not installed${NC}"
-else
-    echo -e "${YELLOW}flatpak not available. Install manually: sudo dnf install flatpak${NC}"
-fi
-
-# ── 6. Kernel Network Tuning ──
+# ── 5. Kernel Network Tuning ──
 echo -e "${GREEN}[5/9] Applying kernel network tuning...${NC}"
 sudo mkdir -p /etc/sysctl.d
 sudo cp config/system/sysctl.d/99-network.conf /etc/sysctl.d/99-network.conf
 sudo sysctl -p /etc/sysctl.d/99-network.conf 2>/dev/null || true
 
 # ── 6. Dotfiles Setup ──
-echo -e "${GREEN}[7/10] Installing dotfiles...${NC}"
+echo -e "${GREEN}[6/9] Installing dotfiles...${NC}"
 
 # Ensure config directories exist
 mkdir -p "$HOME/.config"
@@ -151,7 +140,7 @@ fi
 fc-cache -f
 
 # ── 7. KDE Plasma Configuration ──
-echo -e "${GREEN}[8/10] Configuring KDE Plasma...${NC}"
+echo -e "${GREEN}[7/9] Configuring KDE Plasma...${NC}"
 
 mkdir -p "$HOME/.config"
 
@@ -192,7 +181,7 @@ else
 fi
 
 # ── 9. ZSH as default shell ──
-echo -e "${GREEN}[9/10] Setting ZSH as default shell...${NC}"
+echo -e "${GREEN}[8/9] Setting ZSH as default shell...${NC}"
 if command -v zsh &>/dev/null; then
     if [[ "$SHELL" != "$(which zsh)" ]]; then
         chsh -s "$(which zsh)" 2>/dev/null || echo -e "${YELLOW}Could not change shell. Run: chsh -s $(which zsh)${NC}"
@@ -206,7 +195,7 @@ if command -v zsh &>/dev/null; then
 fi
 
 # ── 10. Finalize ──
-echo -e "${GREEN}[10/10] Cleanup and final steps...${NC}"
+echo -e "${GREEN}[9/9] Cleanup and final steps...${NC}"
 
 # Update font cache again
 fc-cache -f
