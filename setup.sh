@@ -18,7 +18,7 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 # ── Banner ──
-echo -e "${CYAM}"
+echo -e "${CYAN}"
 echo "████████████████████████████████████████████████████████████████████████████"
 echo "█                                                                          █"
 echo "█              Fedora KDE Configuration — Setup Script                     █"
